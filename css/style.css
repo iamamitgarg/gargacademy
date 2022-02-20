@@ -1,0 +1,42 @@
+.title{
+    text-align: center;
+    margin-left: 30px;
+    padding-top: 30px;
+}
+.title:hover{
+color:brown;
+}
+
+.carousel .carousel-item{
+    max-height: 450px;
+}
+.carousel-item img{
+/* object-fit: contain; */
+    max-height: 450px;
+}
+.textcenter{
+    text-align: center;
+}
+.body{
+    background-color: rgb(237, 241, 241);
+}
+
+.iconimg{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+p{
+    font-family: 'Comfortaa', cursive;
+}
+
+.about{
+    font-family: 'Comfortaa', cursive;
+    background-color: rgb(231,191,213);
+    border: 5px solid rgb(245,207,208);
+}
+.aboutus{
+    background-color: rgb(220,237,193);
+    font-family: 'Comfortaa', cursive;
+}

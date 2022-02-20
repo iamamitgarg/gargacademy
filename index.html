@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+
+
+   
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"></script>
+
+
+
+  <link rel="stylesheet" href="slider-boxes-master/slider-boxes.css">
+  <script src="slider-boxes-master/slider-boxes.js"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Lato:ital,wght@0,300;0,400;0,700;1,700&family=Shizuru&display=swap');
+    </style>
+
+
+
+
+
+</head>
+<body class="body">
+   
+    <nav class="navbar navbar-expand-lg nav navbar-dark bg-dark" style="background-color: black;">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="img/logo1.jpg" width="70px" height="70px"  alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-checked="page" href="about.html">About</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Our Course
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Node.js</a></li>
+                  <li><a class="dropdown-item" href="#">PHP</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Python</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" data-bs-toggle="modal" data-bs-target="#login_modal" href="#">Login</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" data-bs-toggle="modal" data-bs-target="#signup_modal" aria-current="page" href="#">Signup</a>
+              </li>
+              </ul>s
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit" style="background-color: rgb(217,217,235), rgb(4,20,15)">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+  <!-- Modal -->
+  <div class="modal fade" id="signup_modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <!-- <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div> -->
+        <div class="modal-body mymodal_back">
+            <div class="container mt-2 ">
+                <div class="row">
+                    <div class="col-sm-8 offset-sm-2" style="background-color: rgba(0, 255, 85,0);">
+                      <h1 class="text-center pb-2" style="background-color: mediumorchid;">Registration</h1>
+                      <form action="signup.html" method="post">
+                          <!-- Name -->
+                          <div class="mb-3 row">
+                            <label for="staticEmail" class="col-sm-2 col-form-label">Name</label>
+                            <div class="col-sm-10">
+                              <input type="text" class="form-control" required  placeholder="Enter Your Name">
+                            </div>
+                          </div>
+                           <!-- Name End -->
+                           
+                           <!-- Email -->
+                          <div class="mb-3 row">
+                            <label class="col-sm-2 col-form-label">Email</label>
+                            <div class="col-sm-10">
+                              <input type="email" class="form-control" required placeholder="Enter Your Email">
+                            </div>
+                          </div>
+                         <!-- Email end -->
+        
+                         <!-- Password -->
+                         <div class="mb-3 row">
+                            <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+                            <div class="col-sm-10">
+                              <input type="password" class="form-control" id="inputPassword" placeholder="Enter Your Password">
+                            </div>
+                          </div>
+                         <!-- Password End -->
+        
+                         <!-- Gender -->
+                         <div class="mb-3 row">
+                            <label class="col-sm-2 col-form-label">Gender</label>
+                            <div class="col-sm-10">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" required id="inlineRadio1" value="male">
+                                    <label class="form-check-label" for="inlineRadio1">Male</label>
+                                  </div>
+                                  <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" required id="inlineRadio2" value="female">
+                                    <label class="form-check-label" for="inlineRadio2">Female</label>
+                                  </div>
+                            </div>
+                          </div>
+                         <!-- Gender End -->
+        
+                         <!-- State -->
+                         <div class="mb-3 row">
+                          <label class="col-sm-2 col-form-label">State</label>
+                          <div class="col-sm-10">
+                            <select class="form-select" aria-label="Default select example" required>
+                              <option selected disabled>Select</option>
+                              <option value="1">Himachal Pradesh</option>
+                              <option value="2">Chandigarh(U.T.)</option>
+                              <option value="3">Haryana</option>
+                              <option value="4">Delhi</option>
+                              <option value="5">Jammu & Kashmir</option>
+                            </select>
+                          </div>
+                        </div>
+                         <!-- Mobile -->
+        
+                             <div class="mb-3 row">
+                <label class="col-sm-2 col-form-label">Number</label>
+                <div class="col-sm-10">
+                  <div class="row">
+                    <div class="col-sm-3">
+                  <select class="form-select" aria-label="Default select example" required>
+                    <option selected disabled>Country Code</option>
+                    <option value="1">India(+91)</option>
+                    <option value="2">USA(+1)</option>
+                </select>
+                  </div>
+                 
+                  
+                  <div class="col-sm-9">
+                  <input type="number" class="form-control" required placeholder="Enter Your Mobile No">
+                </div>
+                </div>
+                </div>
+              </div>
+                        
+                       <!-- Mobile End -->
+        
+                         <!-- Password -->
+        
+                       <!-- File -->
+                       <div class="mb-3 row">
+                        <label class="col-sm-2 col-form-label">Choose File</label>
+                        <div class="col-sm-10">
+                          <input type="file" class="form-control" placeholder="Select Image">
+                        </div>
+                      </div>
+        
+                       <!-- File End -->
+        
+        
+                       <!-- Text area -->
+                       <div class="mb-3 row">
+                        <label class="col-sm-2 col-form-label">Address:</label>
+                        <div class="col-sm-10">
+                          <textarea class="form-control" placeholder="Enter You Address Here" required rows="3"></textarea>
+                        
+                        </div>
+                      </div>
+                       <!-- tect area end -->
+        
+        
+                       <div class="text-center mb-4">
+                         <button class="btn btn-success">Sign Up</button>
+                       </div>
+                      </form>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    
+      </div>
+    </div>
+  </div>
+
+  <!-- Model end -->
+  <!-- Modal Login -->
+  <div class="modal fade" id="login_modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog model-lg">
+      <div class="modal-content">
+        <div class="modal-header " style="background-color: wheat;color: azure;">
+          <h5 class="modal-title" id="exampleModalLabel">Login Here</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body mymodal_back">
+            <form action="nav.html">
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label" style="color: silver;font-weight: bold;">Email address</label>
+                  <input type="email" class="form-control" required aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label" required style="color: blueviolet;font-weight: bold;">Password</label>
+                  <input type="password" class="form-control">
+                </div>
+                <div class="mb-3 form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Login</button>
+              </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- model login end -->
+  <div class="row">
+      <div class="col-12"><h3 class="title">GARG ACCDEMCY</h3><Garg accdemcy</div>
+  </div>
+  <!-- Carousel -->
+  <div id="carouselExampleDark" class="carousel carousel-dark mt-3" data-bs-ride="carousel">
+    <div class="carousel-indicators btn7">
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="10000">
+        <img src="img/sliderimg/a11.png" class="d-block w-100 img-thumbnail" alt="...">
+        <div class="carousel-caption d-sm-block" style="color: azure;">
+          
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <img src="img/sliderimg/a12.jpg" class="d-block w-100 img-thumbnail" alt="...">
+        <div class="carousel-caption d-sm-block" style="color: azure;">
+         
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="img/sliderimg/a144.jpg" class="d-block w-100 img-thumbnail" alt="...">
+        <div class="carousel-caption  d-sm-block m8" style="color: azure;">
+          
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+</div>
+  <!-- cEnd -->
+  
+  <div class="row" class="m-4">
+    <div class="col-sm-5 offset-sm-1 mt-2">
+  <h1 style="background-color: rgba(165, 221, 53,0.3);color: mediumvioletred; padding: 10px;text-align: center;">
+    Our Vision
+  </h1>
+  <p style="text-align:justify;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, officia perferendis aspernatur, voluptate facilis sint fuga enim, aliquid maiores repellendus aperiam tenetur temporibus? Alias ipsa ducimus reiciendis nesciunt in qui ratione minus, fugit nisi a possimus, reprehenderit nulla, esse tenetur maiores architecto vitae. Quisquam consequatur consequuntur ab amet pariatur dignissimos quidem fuga mollitia molestias nihil beatae cupiditate quas labore illo ipsam accusantium deleniti, nobis nemo, modi, eveniet accusamus repudiandae aliquid totam quaerat! Voluptatibus ipsum suscipit, eveniet vitae velit quo facilis illo iure rerum fugiat neque iste, unde necessitatibus iusto similique aspernatur, voluptas sit culpa minus quas enim cumque? Expedita eaque recusandae libero, exercitationem alias cupiditate nam possimus quos, dolor odio fugiat iure ducimus excepturi rem quidem blanditiis minima ex maiores? Officiis architecto, inventore recusandae omnis tenetur eaque a corporis, dicta earum iusto, enim delectus nobis! Pariatur beatae atque velit ipsa eaque non odio, quae ducimus ad, et officiis excepturi dolor impedit exercitationem. Sed, error tempore autem voluptates excepturi, modi optio sint nam laboriosam cumque enim quasi earum nesciunt ipsa fugiat repudiandae cum. Harum debitis quis officia minus alias ipsam eligendi, possimus esse tenetur. Vitae quis iusto quam adipisci non incidunt, omnis assumenda similique deserunt in id inventore commodi dolor mollitia!</p>
+    </div>
+    <div class="col-sm-5 offset-sm-1 mt-2">
+      <h1 style="background-color: rgba(165, 221, 53,0.3);color: mediumvioletred; padding: 10px;text-align: center;">
+        Our Mission
+      </h1>
+      <img src="images/l1.jpg" alt="" style="float: left;border-radius: 50%;margin:10px;">
+      <p style="text-align: justify;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione quisquam asperiores aut mollitia, possimus repudiandae enim facere eveniet rem expedita, cum maxime itaque voluptas maiores numquam quis consequatur animi ipsum laborum hic? Temporibus eius excepturi, quas tempore nesciunt cupiditate maiores quod perspiciatis facilis eaque quisquam repellendus reprehenderit adipisci necessitatibus perferendis quae illum. Quam, nulla repellendus quas alias, excepturi consequuntur consectetur quaerat omnis, quod quae dolores ipsum nostrum quo officia quibusdam blanditiis sint aperiam ut necessitatibus maiores est illo dolorem! Illum pariatur ad aspernatur incidunt vero. Minima error inventore numquam fuga eveniet explicabo dignissimos et distinctio ab expedita quisquam deleniti odit excepturi mollitia ratione perferendis alias, optio dolores nobis molestias vero rerum nemo. Ipsam, reiciendis nam! Magni tempore natus culpa nulla, illo nesciunt qui esse doloribus nisi earum obcaecati possimus aut animi cum non adipisci quo commodi cumque magnam suscipit corporis. Officiis maxime adipisci ipsa nesciunt totam illum. Illum ipsa a et culpa quae aut. Tempore iusto dolorem ipsam quidem explicabo minima eaque aperiam deserunt asperiores, recusandae, dicta aspernatur a cupiditate voluptas ducimus. Neque ad dolor, cupiditate delectus deserunt quod voluptate repudiandae excepturi ipsum, facilis saepe! Excepturi rem pariatur repellat accusantium corporis. Laudantium ex quibusdam harum aperiam quasi assumenda natus? Ut.</p>
+    </div>
+
+  </div> 
+
+  <div class="row">
+    <div class="col-sm-3 mb-4 " ><center><img  class="iconimg" src="img/classroom/c1.jpg" alt="pic"><h5>our class</h5></center></div>
+
+    <div class="col-sm-3 "><center><img   class="iconimg" src="img/classroom/c2.jpg"><h5>our class2</h5></center></div>
+    <div class="col-sm-3 " ><center><img  class="iconimg" src="img/classroom/c3.jpg"><h5>our class3</h5></center></div>
+    <div class="col-sm-3 "><center><img  class="iconimg" src="img/classroom/c4.jpg"><h5>our class4</h5></center></div>
+    <div class="col-sm-3 " ><center><img    class="iconimg" src="img/classroom/c5.jpg" alt="pic"><h5>Physics class</h5></center></div>
+
+    <div class="col-sm-3 "><center><img  class="iconimg" src="img/classroom/c6.jpg"><h5>chemistry class</h5></center></div>
+    <div class="col-sm-3 " ><center><img  class="iconimg" src="img/classroom/c7.jpg"><h5>English class</h5></center></div>
+    <div class="col-sm-3 "><center><img  class="iconimg" src="img/classroom/c8.jpg"><h5>Hindi class</h5></center></div>
+  </div>
+
+  <!----about us________________________________________-->
+  <div class="container-fluid" style="border:3px solid black">
+    <div class="row">
+     <center><h3 class="aboutus" style="background-image: rgb(34,59,85)">About us</h3></center>
+      <h4 class="about">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque officia accusamus illum eos dolorum voluptatibus delectus, nam, repellendus quibusdam vel omnis obcaecati eveniet asperiores, consequuntur hic perferendis repudiandae. Dolor, temporibus? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis cupiditate quaerat molestias veritatis corrupti laborum tenetur asperiores, qui, rerum cum totam natus consectetur at voluptatem! Velit natus quidem corrupti, illum beatae saepe at.</h4>
+    </div>
+  </div>
+<!--slink slinder-->
+<section class="orange-fade p-5 margin-top-xl pos-r">
+  <div class="container">
+   	<div class="row">
+		<div class="col-sm-12">
+        <h2 class="text-center font-weight-bold text-white">Our Super Supportive Facility</h2>
+        <p></p>
+       <div class="mt-5 pos-r">
+          <div class="carousel-controls testimonial-carousel-controls">
+            <div class="control prev"><h3 style="color: white;"><</h3></div>
+            <div class="control next"><h3 style="color: white;">></h3></div>
+          </div>
+          <div class="testimonial-carousel">
+            <div class="one-slide white">
+              <div class="testimonial w-100 h-100  p-3 text-center">
+                <div class="message text-center text-gray">Head of Senior facility</div>
+                <div class="separator">&nbsp;</div>
+                <div class="brand"><img alt="Florida Dairy Farmers" src="img/slinkslider/aa1.jpg" class="mx-auto"/></div>
+              </div>
+            </div>
+            <div class="one-slide white">
+              <div class="testimonial w-100 h-100  p-3 text-center">
+                <div class="message text-center text-gray">Web designer</div>
+                <div class="separator">&nbsp;</div>
+                <div class="brand"><img alt="Florida Department of Education" src="img/slinkslider/aa2.jpg" class="mx-auto"/></div>
+              </div>
+            </div>
+            <div class="one-slide white">
+              <div class="testimonial w-100 h-100  p-3 text-center">
+                <div class="message text-center text-gray">Programmer</div>
+                <div class="separator">&nbsp;</div>
+                <div class="brand"><img alt="Seminole County" src="img/slinkslider/aa3.jpg" class="mx-auto" /></div>
+              </div>
+            </div>
+            <div class="one-slide white">
+              <div class="testimonial w-100 h-100  p-3 text-center">
+                <div class="message text-center text-gray">junior adviser</div>
+                <div class="separator">&nbsp;</div>
+                <div class="brand"><img alt="Lynx" src="img/slinkslider/aa4.jpg" class="mx-auto" /></div>
+              </div>
+            </div>
+            <div class="one-slide white">
+              <div class="testimonial w-100 h-100  p-3 text-center">
+                <div class="message text-center text-gray">Mathematician</div>
+                <div class="separator">&nbsp;</div>
+                <div class="brand"><img alt="Miami Beach VCA" src="img/slinkslider/aa5.jpeg" class="mx-auto" /></div>
+              </div>
+            </div>
+            <div class="one-slide white">
+              <div class="testimonial w-100 h-100  p-3 text-center">
+                <div class="message text-center text-gray">node Programmer.</div>
+                <div class="separator">&nbsp;</div>
+                <div class="brand"><img alt="Oneblood" src="img/slinkslider/aa6.jpg" class="mx-auto" /></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> 
+<!---slinder end-->
+
+<div class="container-fluid">
+  <div class="row">
+    <center><h3 class="location" style="background: rgb(99,140,136);">Address</h3></center>
+    <div class="col-lg-9">
+      <center>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3403.861279487407!2d76.77774189236371!3d31.445485716764573!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7267c448944e95ad!2zMzHCsDI2JzQ3LjMiTiA3NsKwNDYnNDQuMiJF!5e0!3m2!1sen!2sin!4v1645208379984!5m2!1sen!2sin" width="100%" height="200px" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+    <div class="col-lg-3 textcenter">
+      <img src="img/qrcode.png" style="width: 200px; height:200px ;">
+    </div>
+  </center>
+  </div>
+</div>
+
+  <!--footoer start ---------------------___________________-->
+ <footer class="py-5">
+   <div class="container-fluid">
+  <div class="row">
+    <div class="col-2">
+      <h5>Section</h5>
+      <ul class="nav flex-column">
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+      </ul>
+    </div>
+
+    <div class="col-2">
+      <h5>Section</h5>
+      <ul class="nav flex-column">
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+      </ul>
+    </div>
+
+    <div class="col-2">
+      <h5>Section</h5>
+      <ul class="nav flex-column">
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+      </ul>
+    </div>
+
+    <div class="col-4 offset-1">
+      <form>
+        <h5>Subscribe to our newsletter</h5>
+        <p>Monthly digest of whats new and exciting from us.</p>
+        <div class="d-flex w-100 gap-2">
+          <label for="newsletter1" class="visually-hidden">Email address</label>
+          <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+          <button class="btn btn-primary" type="button">Subscribe</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div class="d-flex justify-content-between py-4 my-4 border-top">
+    <p>© 2021 Company, Inc. All rights reserved.</p>
+    <ul class="list-unstyled d-flex">
+      <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
+      <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
+      <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
+    </ul>
+  </div>
+   </div>
+</footer>
+
+
+
+
+  
+   <!--foooter end______________-->
+</body>
+</html>
